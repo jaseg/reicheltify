@@ -1,0 +1,672 @@
+# Reichelt:
+40	IB 2						Isolierscheiben				TO-220
+1	SDB 12,7 TR					Schurmpfschlauchbox transparent
+4	V FI343						Clip-Kühlkörper				TO-220
+4	UG 1094U					BNC-Einbaubuchse
+2	UG 1094W2					BNC-Printbuchse
+2	MLN 100-2 SW				Messleitung			schwarz 1m
+1	MLN 100-2 RT				Messleitung			rot		1m
+1	MLN 100-2 GE				Messleitung			gelb	1m
+1	MLN 100-2 GN				Messleitung			grün	1m
+1	MLN 200-2 SW				Messleitung			schwarz 2m
+1	MLN 200-2 RT				Messleitung			rot		2m
+2	MLN 50-2 SW					Messleitung			schwarz  0.5m
+1	MLN 50-2 RT					Messleitung			rot		 0.5m
+1	MLN 50-2 GE					Messleitung			gelb	 0.5m
+1	MLN 50-2 GN					Messleitung			grün	 0.5m
+1	MLN 50-2 BL					Messleitung			blau	 0.5m
+# LEDs
+8	SA 39-11 RT					7-Segment			rot		10.0mm
+12	SA 56-11 RT					7-Segment			rot		14.2mm
+6	SA 56-11 GN					7-Segment			grün	14.2mm
+6	SA 56-11 GE					7-Segment			gelb	14.2mm
+4	SA 56-11 BL					7-Segment			blau	14.2mm
+#FIXME these are pretty expensive
+4	SA 23-12 RT					7-Segment			rot		56.9mm
+4	RBG 1000					10-Bargraph			rot				futurlec?
+4	GBG 1000					10-Bargraph			grün			futurlec?
+20	LED 5MM ST RT				LED					rot		5mm
+20	LED 5MM ST GE				LED					gelb	5mm
+20	LED 5MM ST GN				LED					grün	5mm
+10	LED 5MM BL					LED					blau	5mm
+20	LED 3MM ST RT				LED					rot		3mm
+20	LED 3MM ST GE				LED					gelb	3mm
+20	LED 3MM ST GN				LED					grün	3mm
+10	LED 3MM BL					LED					blau	3mm
+10	LED 10MM RT					LED					rot		10mm
+10	LED 10MM GE					LED					gelb	10mm
+10	LED 10MM GN					LED					grün	10mm
+10	LED 5-4500 RT				LED Ultrahell		rot		5mm
+10	LED 5-08000 GN				LED Ultrahell		grün	5mm
+10	LED 5-10500 GE				LED Ultrahell		gelb	5mm
+10	LED 5-13000 WW				LED Ultrahell		warmweiß5mm
+10	LED 5-12000 BL				LED Ultrahell		blau	5mm
+10	SMD-LED 0603 RT				LED					rot		0603
+10	SMD-LED 0603 GE				LED					gelb	0603
+10	SMD-LED 0603 GN				LED					grün	0603
+10	SMD-LED 0603 BL				LED					blau	0603
+10	SMD-LED 0805 RT				LED					rot		0805
+10	SMD-LED 0805 GE				LED					gelb	0805
+10	SMD-LED 0805 GN				LED					grün	0805
+10	SMD-LED 0805 BL				LED					blau	0805
+10	SMD-LED 1206 RT				LED					rot		1206
+10	SMD-LED 1206 GE				LED					gelb	1206
+10	SMD-LED 1206 GN				LED					grün	1206
+10	SMD-LED 1206 BL				LED					blau	1206
+2	EBF A-3						LED-Einbaufassung			5mm
+2	EBF A-5						LED-Einbaufassung			5mm
+4	SFH 300 FA-3/4				Fototransistor		IR		5mm
+4	SFH 300-3/4					Fototransistor				5mm
+4	SFH 203 FA					Fotodiode			IR		5mm
+4	SFH 203						Fotodiode					5mm
+10	LD 271						LED					IR(950) 5mm
+10	LD 274-3					LED					IR(950) 5mm
+10	SFH 484						LED					IR(880) 3mm
+1	TSOP 31236					IR-Empfänger		36kHz
+1	TSOP 31238					IR-Empfänger		38kHz
+1	TSOP 31240					IR-Empfänger		40kHz
+# Optokoppler
+4	MOC 3021					Optotriac
+4	MOC 3061					Optotriac m. ZC
+8	PC 817X						Optokoppler
+4	PC 847X						Optokoppler					4-fach
+# Festspannungsregler (linear)
+4	µA 7805						Festspannungsregler 5V	1A	TO-220
+4	µA 7812						Festspannungsregler 12V 1A	TO-220
+4	µA 78L05					Festspannungsregler 5V	.1A TO-92
+4	µA 78L12					Festspannungsregler 12V .1A TO-92
+2	µA 78S05					Festspannungsregler 5V	2A	TO-220
+2	µA 78S12					Festspannungsregler 12V 2A	TO-220
+4	µA 7905						Festspannungsregler -5V 1A	TO-220
+4	µA 7912						Festspannungsregler -12V 1A TO-220
+12	LM 317-220					Einstellbarer Spannungsregler
+# Quarze etc.
+5	2,0000-HC18					Quarz 2MHz					HC18
+5	4,0000-HC18					Quarz 4MHz					HC18
+5	8,0000-HC18					Quarz 8MHz					HC18
+5	12,0000-HC18				Quarz 12MHz					HC18
+5	14,7456-HC18				Quarz 14.7456 (baudrate)	HC18
+5	16,0000-HC18				Quarz 16MHz					HC18
+5	20,0000-HC18				Quarz 20MHz					HC18
+5	24,0000-HC18				Quarz 24MHz					HC18
+5	48,0000-HC18				Quarz 48MHz					HC18
+5	4,0000-HC49-SMD				Quarz 4MHz					HC49
+5	8,0000-HC49-SMD				Quarz 8MHz					HC49
+5	14,7456-HC49-SMD			Quarz 14.7456 (baudrate)	HC49
+5	16,0000-HC49-SMD			Quarz 16MHz					HC49
+5	20,0000-HC49-SMD			Quarz 20MHz					HC49
+10	0,032768					Uhrenquarz
+2	OSZI 1,000000				Quarzoszillator 1MHz
+2	OSZI 8,000000				Quarzoszillator 8MHz
+2	OSZI 16,000000				Quarzoszillator 16MHz
+# Sicherungen
+10	FLINK 0,16A					Sicherungen					5*20
+10	FLINK 0,25A					Sicherungen					5*20
+10	FLINK 0,5A					Sicherungen					5*20
+10	FLINK 0,63A					Sicherungen					5*20
+10	FLINK 0,8A					Sicherungen					5*20
+10	FLINK 1,0A					Sicherungen					5*20
+10	FLINK 1,6A					Sicherungen					5*20
+10	FLINK 2,5A					Sicherungen					5*20
+10	FLINK 4,0A					Sicherungen					5*20
+10	FLINK 6,3A					Sicherungen					5*20
+10	FLINK 10A					Sicherungen					5*20
+10	MTR. 0,16A					Sicherungen					5*20
+10	MTR. 0,25A					Sicherungen					5*20
+10	MTR. 0,5A					Sicherungen					5*20
+10	MTR. 0,63A					Sicherungen					5*20
+10	MTR. 0,8A					Sicherungen					5*20
+10	MTR. 1,0A					Sicherungen					5*20
+10	MTR. 1,6A					Sicherungen					5*20
+10	MTR. 2,5A					Sicherungen					5*20
+10	MTR. 4,0A					Sicherungen					5*20
+10	MTR. 6,3A					Sicherungen					5*20
+10	MTR. 10A					Sicherungen					5*20
+10	TRÄGE 0,16A					Sicherungen					5*20
+10	TRÄGE 0,25A					Sicherungen					5*20
+10	TRÄGE 0,5A					Sicherungen					5*20
+10	TRÄGE 0,63A					Sicherungen					5*20
+10	TRÄGE 0,8A					Sicherungen					5*20
+10	TRÄGE 1,0A					Sicherungen					5*20
+10	TRÄGE 1,6A					Sicherungen					5*20
+10	TRÄGE 2,5A					Sicherungen					5*20
+10	TRÄGE 4,0A					Sicherungen					5*20
+10	TRÄGE 6,3A					Sicherungen					5*20
+10	TRÄGE 10A					Sicherungen					5*20
+# Elkos
+10	RAD FC 10/50				Elko Low-ESR
+10	RAD FC 22/25				Elko Low-ESR
+10	RAD FC 22/63				Elko Low-ESR
+10	RAD FC 47/25				Elko Low-ESR
+10	RAD FC 47/63				Elko Low-ESR
+10	RAD FC 100/25				Elko Low-ESR
+10	RAD FC 100/63				Elko Low-ESR
+10	RAD FC 220/25				Elko Low-ESR
+10	RAD FC 220/63				Elko Low-ESR
+10	RAD FC 470/25				Elko Low-ESR
+5	RAD FC 470/63				Elko Low-ESR
+#5	RAD FC 1000/25				Elko Low-ESR						Nicht mehr verfügbar
+#5	RAD FC 1000/63				Elko Low-ESR						Nicht mehr verfügbar
+10	RAD 0,47/100				Elko
+10	RAD 1/100					Elko
+10	RAD 1/350					Elko
+10	RAD 2,2/100					Elko
+10	RAD 2,2/350					Elko
+10	RAD 4,7/100					Elko
+10	RAD 4,7/350					Elko
+10	RAD 10/100					Elko
+10	RAD 10/350					Elko
+10	RAD 22/100					Elko
+10	RAD 47/100					Elko
+6	RAD 47/350					Elko
+10	RAD 100/100					Elko
+2	RAD 100/350					Elko
+10	RAD 220/100					Elko
+10	RAD 470/100					Elko
+1	SPK 1,0F					Goldcap 1F
+1	SPK 100.000µ-10				Goldcap 0.1F
+10	SMD TAN.0,47/25				SMD Tantalkondensator
+10	SMD TAN.0,47/35				SMD Tantalkondensator
+10	SMD TAN.1,0/16				SMD Tantalkondensator
+10	SMD TAN.1,0/35				SMD Tantalkondensator
+6	SMD TAN.4,7/25				SMD Tantalkondensator
+6	SMD TAN.4,7/35				SMD Tantalkondensator
+6	SMD TAN.10/16				SMD Tantalkondensator
+6	SMD TAN.10/35				SMD Tantalkondensator
+6	SMD TAN.22/20				SMD Tantalkondensator
+6	SMD TAN.22/6,3				SMD Tantalkondensator
+2	TZ03 60P					Trimmkondensator
+2	TZ03 20P					Trimmkondensator
+2	TZ03 5,0P					Trimmkondensator
+# Sockel, Stiftleisten, Stecker
+4	PL OGN-25					Print-Sicherungshalter
+10	GS 8						IC-Sockel
+10	GS 14						IC-Sockel
+10	GS 16						IC-Sockel
+10	GS 18						IC-Sockel
+10	GS 20						IC-Sockel
+10	GS 24						IC-Sockel
+10	GS 24-S						IC-Sockel
+10	GS 28						IC-Sockel
+10	GS 28-S						IC-Sockel
+2	GS 32P						IC-Sockel
+4	GS 40						IC-Sockel
+6	SL 1X40G 2,54				Stiftleiste gerade
+6	SL 2X40G 2,54				Stiftleiste gerade
+4	SL 1X40W 2,54				Stiftleiste gewinkelt
+4	SL 2X40W 2,54				Stiftleiste gewinkelt
+10	WSL 6G						Wannenstecker
+10	WSL 10G						Wannenstecker
+10	WSL 14G						Wannenstecker
+10	WSL 16G						Wannenstecker
+10	WSL 20G						Wannenstecker
+10	WSL 26G						Wannenstecker
+4	WSL 34G						Wannenstecker
+4	WSL 40G						Wannenstecker
+2	WSL 6W						Wannenstecker
+4	WSL 10W						Wannenstecker
+4	WSL 14W						Wannenstecker
+4	WSL 16W						Wannenstecker
+4	WSL 20W						Wannenstecker
+4	WSL 26W						Wannenstecker
+4	WSL 34W						Wannenstecker
+4	WSL 40W						Wannenstecker
+10	PFL 6						Pfostenstecker
+10	PFL 10						Pfostenstecker
+10	PFL 14						Pfostenstecker
+10	PFL 16						Pfostenstecker
+10	PFL 20						Pfostenstecker
+10	PFL 26						Pfostenstecker
+10	PFL 34						Pfostenstecker
+10	PFL 40						Pfostenstecker
+4	D-SUB ST 09					D-SUB Stecker Chassis	9pol
+4	D-SUB ST 15					D-SUB Stecker Chassis	15pol
+2	D-SUB ST 25					D-SUB Stecker Chassis	25pol
+2	D-SUB ST 37					D-SUB Stecker Chassis	37pol
+4	D-SUB BU 09					D-SUB Buchse Chassis	9pol
+4	D-SUB BU 15					D-SUB Buchse Chassis	15pol
+2	D-SUB BU 25					D-SUB Buchse Chassis	25pol
+2	D-SUB BU 37					D-SUB Buchse Chassis	37pol
+4	D-SUB ST 09US				D-SUB Stecker Print		9pol
+4	D-SUB ST 15US				D-SUB Stecker Print		15pol
+2	D-SUB ST 25US				D-SUB Stecker Print		25pol
+2	D-SUB ST 37US				D-SUB Stecker Print		37pol
+4	D-SUB BU 09US				D-SUB Buchse Print		9pol
+4	D-SUB BU 15US				D-SUB Buchse Print		15pol
+2	D-SUB BU 25US				D-SUB Buchse Print		25pol
+2	D-SUB BU 37US				D-SUB Buchse Print		37pol
+4	HD 15M						D-SUB HD Stecker Lötkelche
+4	HD 15F						D-SUB HD Buchse Lötkelche
+4	HD 15FW						D-SUB HD Buchse Print
+4	USB BWM SMD					USB B mini Buchse SMD
+4	USB BW						USB B Buchse
+4	USB BW SMD					USB B Buchse SMD
+4	USB AG						USB A Stecker
+4	USB AGF						USB A Buchse
+10	EBS 35						Klinkenbuchse
+4	EBS 63P						Klinkenbuchse
+4	EB-DIOS M06					Mini-DIN Buchse
+4	EB-DIOS M08					Mini-DIN Buchse
+2	HS 21-9						Hohlstecker
+2	HS 25-9						Hohlstecker
+4	HEBW 21						Hohlstecker-Buchse
+4	HEBW 25						Hohlstecker-Buchse
+2	HEBL 21						Hohlstecker-Buchse
+2	HEBL 25						Hohlstecker-Buchse
+4	MEBP 8-8G					RJ45-Buchse geschirmt
+4	MEBP 4-4S					RJ10-Buchse
+4	MEBP 6-6S					RJ12-Buchse
+2	PK 4 SW						Polklemme 4mm		schwarz
+2	PK 4 RT						Polklemme 4mm		rot
+2	PK 4 BL						Polklemme 4mm		blau
+2	PK 4 GE						Polklemme 4mm		gelb
+2	PK 4 GN						Polklemme 4mm		grün
+3	LÜK 2,5						Lüsterklemme
+3	LÜK 6						Lüsterklemme
+1	LÜK 10						Lüsterklemme
+1	LÜK 16						Lüsterklemme
+10	AKL 101-03					Reihenklemmen 5,08mm
+6	AKL 101-02					Reihenklemmen 5,08mm
+10	FS-R-4,75					Flachstecker male
+10	FS-R-6,35					Flachstecker male
+10	FS-B-4,75					Flachstecker male
+10	FS-B-6,35					Flachstecker male
+10	FSH-R-4,75					Flachstecker female
+10	FSH-R-6,35					Flachstecker female
+10	FSH-B-4,75					Flachstecker female
+10	FSH-B-6,35					Flachstecker female
+20	FS-P 4,75					Flachstecker male print
+20	FS-P 6,35					Flachstecker male print
+1	AEHI 0,5-100				Aderendhülsen
+1	AEHI 0,75-100				Aderendhülsen
+1	AEHI 1,0-100				Aderendhülsen
+1	AEHI 1,5-100				Aderendhülsen
+1	AEHI 2,5-100				Aderendhülsen
+# Schalter, Relais
+5	WIPPE 1801.1119				Wippschalter
+4	NT 04						DIP-Schalter
+4	NT 08						DIP-Schalter
+2	NT 10						DIP-Schalter
+25	TASTER 9302					Printtaster
+10	TASTER 3305B				Printtaster gewinkelt
+2	DT 6 RT						Printtaster
+2	DT 6 SW						Printtaster
+2	DT 6 GE						Printtaster
+2	DT 6 BL						Printtaster
+2	DT 6 GN						Printtaster
+2	KSK 1A66					Reedkontakt
+2	JV 05						Relais 5A/5V
+2	JV 12						Relais 5A/12V
+2	FRT5 DC5V					Signalrelais 5V
+2	FRT5 DC12V					Signalrelais 12V
+1	FIN 40.61.9 12V				Relais 16A/12V
+# Trimmer
+2	64Y-10						Trimmer
+2	64Y-20						Trimmer
+2	64Y-50						Trimmer
+2	64Y-100						Trimmer
+2	64Y-500						Trimmer
+5	64Y-1,0k					Trimmer
+2	64Y-5,0k					Trimmer
+5	64Y-10k						Trimmer
+2	64Y-20k						Trimmer
+2	64Y-50k						Trimmer
+5	64Y-100k					Trimmer
+2	64Y-500k					Trimmer
+2	64Y-1,0M					Trimmer
+# Sensoren
+2	KTY 81-110					Temperatursensor
+2	MCE 100						Elektret-Mikrofon
+2	TLE 4905L					Hallsensor
+# 74 series TTL logic
+4	74HC 00						4*2 nand
+4	74HC 02						4*2 nor
+4	74HC 08						4*2 and
+4	74HC 32						4*2 or
+4	74HC 86						4*2 xor
+4	74HC 10						3*3 nand
+4	74HC 11						3*3 and
+4	74HC 27						3*3 nor
+4	74HC 20						2*4 nand
+4	74HC 21						2*4 and
+4	74HC 30						1*8 nand
+4	74HC 04						6	not
+#4	74HC 05						6	not w/ open collector outputs
+4	74HC 14						6	not w/ schmitt trigger inputs
+4	74HC 390					dual decade ripple counter
+4	74HC 393					dual 4-bit ripple counter
+4	74HC 162					sync. decade counter (sync. reset)
+4	74HC 163					sync. 4-bit counter (sync. reset)
+4	74HC 192					up/down decade counter
+4	74HC 193					up/down 4-bit counter
+4	74HC 4017					decimal counter
+4	74HC 42						bcd-to-decimal
+4	74HC 4511					bcd-to-7segment
+# 4000 series CMOS logic
+10	MOS 4001					4*2 nor
+10	MOS 4011					4*2 nand
+10	MOS 4070					4*2 xor
+10	MOS 4071					4*2 or
+4	MOS 4077					4*2 xnor
+10	MOS 4081					4*2 and
+4	MOS 4023					3*3 nand
+4	MOS 4025					3*3 nor
+4	MOS 4073					3*3 and
+4	MOS 4075					3*3 or
+4	MOS 4002					2*4 nor
+4	MOS 4012					2*4 nand
+4	MOS 4072					2*4 or
+4	MOS 4082					2*4 and
+4	MOS 4068					1*8 nand/and
+10	MOS 4069					6	not
+10	MOS 4049					6	inv. buffer
+10	MOS 4050					6 buffer
+4	MOS 4017					decimal counter
+4	MOS 4026					decade counter and 7-seg driver
+4	MOS 4029					up/down sync. decade/4-bit counter w/ preset
+4	MOS 4510					up/down decade counter w/ preset
+4	MOS 4516					up/down 4-bit counter w/ preset
+4	MOS 4518					dual decade counter
+4	MOS 4520					dual 4-bit counter
+4	MOS 4040					12-bit ripple counter
+4	MOS 4060					14-bit ripple counter w/ int. osc.
+10	MOS 4028					bcd-to-decimal
+10	MOS 4511					bcd-to-7seg driver
+4	MOS 4016					4	bilateral switch
+4	MOS 4517					2	64-stage shift register
+4	MOS 40105					4*16-stage bubble memory
+4	MOS 4021					8-input piso shift register
+10	MOS 4094					8-output sipo shift register (great for driving vfds)
+4	MOS 40174					6	d-flipflop
+4	MOS 40175					4	d-flipflop
+4	MOS 4013					2	d-flipflop
+4	MOS 4027					2	jk-flipflop
+#4	MOS 4096					gated inv/non-inv jk flipflop
+2	MOS 4527					bcd rate multiplier
+2	MOS 4522					bcd divide-by-n
+2	MOS 4051					analog 8-mux
+4	MOS 4532					8-bit priority encoder
+# Verschiedenes Digitalzeug
+2	FT 232 RL					FTDI USB to TTL serial		SSOP-28
+2	ST 24C64 BN6				8kByte I2C-EEPROM			DIP-8
+2	ST 24C64 MN6				8kByte I2C-EEPROM			SO-8
+2	25LC640A-I/P				8kByte SPI-EEPROM			DIP-8
+2	25LC640A-I/SN				8kByte SPI-EEPROM			SO-8
+4	MAX 485 CPA					RS485-Transceiver			DIP-8
+4	MAX 485 CSA					RS485-Transceiver			SO-8
+2	MAX 232 CSE SMD				RS232-Transceiver			SO-16 (narrow)
+2	MAX 232 CWE					RS232-Transceiver			SO-16 (wide)
+3	MAX 232 CPE					RS232-Transceiver			DIP-16
+#FIXME
+# avrs
+4	ATMEGA 8-16 TQ				AVR 8-bit MCU
+#4	ATMEGA 162-16DIP			AVR 8-bit MCU
+#4	ATMEGA 162-16TQ				AVR 8-bit MCU
+4	ATMEGA 32-U2 TQ				AVR 8-bit MCU w/ USB
+2	ATMEGA 328P-AU				AVR 8-bit MCU
+2	ATMEGA 328P-PU				AVR 8-bit MCU
+2	ATMEGA 32-16 DIP			AVR 8-bit MCU
+2	ATTINY 12 SO8				AVR 8-bit MCU
+2	ATTINY 12 DIP				AVR 8-bit MCU
+2	ATTINY 45-20PU				AVR 8-bit MCU
+2	ATTINY 45-20SU				AVR 8-bit MCU
+2	ATTINY 2313A-SU				AVR 8-bit MCU
+2	ATTINY 2313A-PU				AVR 8-bit MCU
+#2	mcp 3002-i/p				2-ch 8-bit 200kSps adc <== gibt's nicht mehr
+#MCP 3426A0-E/SN ?
+#2	mcp3301-ci/p				1-ch 13-bit 100kSps adc
+#2	mcp4821						2-ch 12-bit 200ksps dac
+#2	mcp 4801-E/P				2-ch 8-bit 200ksps dac
+# Spulen
+2	TLC 1,0A-10µ
+2	TLC 1,0A-47µ
+2	TLC 1,0A-100µ
+2	TLC 1,0A-470µ
+2	TLC 1,0A-1000µ
+2	MISC 1µ
+2	MISC 2µ
+2	MESC 5µ
+4	L-HBCC 10µ
+4	L-HBCC 22µ
+4	L-HBCC 33µ
+4	L-HBCC 47µ
+4	L-HBCC 68µ
+4	L-HBCC 100µ
+4	L-HBCC 150µ
+4	L-HBCC 220µ
+4	L-HBCC 330µ
+4	L-HBCC 470µ
+4	L-HBCC 1,0M
+4	L-HBCC 10M
+4	L-HBCC 100M
+4	SMCC 0,10µ
+4	SMCC 0,22µ
+4	SMCC 0,47µ
+4	SMCC 0,68µ
+4	SMCC 1,00µ
+4	SMCC 1,50µ
+4	SMCC 2,20µ
+4	SMCC 3,30µ
+4	SMCC 4,70µ
+4	SMCC 6,80µ
+# dioden (gleichrichter/schottky/zener/brückengleichrichter)
+50	1N 4148						Universaldiode
+50	1N 4148 SMD					Universaldiode SMD
+50	1N 4007						Gleichrichterdiode
+20	1N 4007 SMD					Gleichrichterdiode SMD
+20	UF 4007						Ultraschnelle Gleichrichterdiode
+20	BAT 46						Schottky
+20	BAT 46 SMD					Schottky SMD
+20	BAT 54 SMD					Schottky SMD
+20	SB 160						Schottky
+50	BAV 99 SMD					ESD-Schutz SMD
+2	B380C800RUND				Brückengleichrichter 380V/800mA
+2	KBU8M						Brückengleichrichter 1000V/8A
+2	SMD DF 04					SMD-Brückengleichrichter 125V/1A
+2	B500C1000DIP				Brückengleichrichter 500V/800mA DIP
+2	BB 833 SMD					Kapazitätsdiode
+# FIXME zenerdioden
+# Transistoren (bipolar/mosfet/jfet/igbt)
+50	BF 420
+50	BC 548C
+50	BC 558C
+20	BC 327-40
+20	BC 337-40
+20	BC 639
+20	BC 640
+10	BD 137
+10	BD 138
+10	2N 5461						(JFET)
+10	2N 7000						(MOSFET TO-92)
+10	BDX 33C						(hoher Strom)
+10	BDX 34C						(hoher Strom)
+20	BC 859C SMD					PNP SMD HF .1A
+20	BC 849C SMD					NPN SMD HF .1A
+20	BC 808-40 SMD				PNP SMD 1A
+20	BC 818-40 SMD				NPN SMD 1A
+2	IRG 4BC 40S					IGBT 600V/60A
+2	IRLZ 34N					N-MOSFET 55V/30A
+2	IRLR 2905					N-MOSFET D-Pak 55V/36A
+2	IRLML 2502					N-MOSFET SOT-23 20V/4.2A
+2	IRLML 6401					P-MOSFET SOT-23 -12V/-4.3A
+2	IRFR 5305					P-MOSFET D-Pak -55V/-31A
+4	IRF 820						N-MOSFET TO-220 500V/2.5A
+4	IRF 7389					Complementary MOSFETs SO-8 30V/2.5A
+# Thyristoren/Triacs
+4	BT 151/800R					Thyristor 800V/12A TO-220
+4	C 106D						Thyristor 400V/4A TO-225AA
+4	TIC 225M					Triac 600V/8A
+4	BT 139/800E					Triac 800V/16A
+4	BTA 12/600SW				Triac 600V/12A snubberless
+# ULN****
+4	ULN 2803A					Darlington array
+# any high side drivers?
+# FIXME
+# Schaltregler
+2	MC 34063 A
+2	MC 34063 AD
+1	LM 2576 T5,0
+1	LM 2576 T12
+1	LM 2576 T3,3
+1	LM 2576 T-ADJ
+# Referenzen
+3	TL 431 TO92
+3	LM 336-Z2,5
+3	LM 336-Z5,0
+# op-amps
+4	MCP 602-I/P					Opamp
+4	MCP 602-I/SN				Opamp
+4	LM 324 DIL					Opamp
+4	LM 324 D SMD				Opamp
+4	TLC 272 DIP					Opamp
+4	TLC 272 CD SMD				Opamp
+4	LM 339 DIL					Opamp
+4	LM 339 D SMD				Opamp
+4	NE 592 DIP					Opamp
+2	NE 592 D14 SMD				Opamp
+# sonstiger analogstuff
+10	NE 555 DIP
+5	NE 555 D SMD
+2	PCF 8583 P					RTC+SRAM+Timer+Eventcounter+foo+bar
+2	PCF 8583 T					RTC+SRAM+Timer+Eventcounter+foo+bar
+2	LM 3914 DIL
+2	LM 3915 DIL
+# FIXME
+# LDOs
+2	LM 2931 AD										SO-8
+2	LM 2931 AT										TO-220
+2	LM 1117 T5,0									TO-220
+2	LM 1117 T3,3									TO-220
+2	LM 1117 MP5,0									SOT-223
+
+# Nicht von Reichelt
+# jaseg
+								RGB-LEDs 5mm (jaseg)
+3								Differenzdrucksensoren von jaseg
+4								3W-Leistungs-RGB-LEDs auf Sternplatinen von jaseg
+								Kipp-, Dreh- und Schiebeschalter von jaseg
+								Temperatursensoren von jaseg
+								RCA (jaseg)
+								XLR (jaseg)
+								Lautsprecher und Piezofoo (jaseg)
+# digikey
+								mma8451qt @1.66usd (digikey) accelerometer 3ch, selectable range 2/4/8g, 14bit, a lot of integrated signal processing
+3								PS100-2B1AR10K (digikey) @3.75USD: 4*10k 100mm Schiebepoti
+								div. MSP430-µCs (msp430g2553 von lynxis, digikey)
+5								drehencoder von digikey (0.60)
+1								MLX90614 digital IR thermometer IC (digikey)
+2								MPL115A2 (drucksensor, digikey)
+#								TUSB3410 USB-Controller (@digikey, pretty expensive)
+								TLC2274 (op-amp) (digikey)
+1								TCS37717FN @2.78usd (digikey) Farbsensor
+2								STLED316S (6-stellen LED-driver + key decoder, Digikey)
+# Data converters
+3	nau7802kgi					24-bit 10sps serial delta-sigma adc
+#FIXME
+# LDOs
+2								LM2931 TO-220 ADJ (digikey)
+2								LM1117 SOT-223 3.3 (digikey)
+# Futurlec
+								solar cells (@futurlec)
+4								LDR 5k, 10k, 50k (futurlec)
+								led matrices (ebay, rgb @futurlec)
+								female headers, also stackable ones. preferably breakable (futurlec, ebay)
+# Ebay
+								micro-USB (ebay, ~60USct)
+								Kleine OLED-Displays (ebay)
+2								2*16 Zeichen oder größere LCDs (ebay)
+2								Sellerie-Bluetooth-Wandler (ebay)
+								ultraschall-abstandssensor (ebay)
+								ir-distanzsensor (ebay)
+								9g-micro-servos (ebay)
+2								led panel meters (ebay, ca. 5€)
+								led matrices (ebay, rgb @futurlec)
+								lasers (ebay, dealextreme, sold in packs of 5)
+								female headers, also stackable ones. preferably breakable (futurlec, ebay)
+# Amazon
+2								usb-serial-converter (amazon, ca. 4€)
+# Missing
+								Klinkenstecker (die goldenen 0815-dinger sind mist)
+# Potis
+2 each		(futurlec) 1k 5k 10k 50k 100k linear
+2 each		(futurlec) 1k 10k 100k dual linear
+2 each		(futurlec) 1k 5k 10k 50k 100k dual log
+2			(futurlec) 10k anti-log
+			(futurlec) sliding pot knobs 1*SPKNOB1, 3*SPKNOB2, 1*SPKNOB3
+			(futurlec) 4*KNOB3, 1*KNOB6, 2*KNOB8, 2*KNOB9, 2*KNOB10, 2*KNOB11, 2*KNOB12
+
+# NOTES (was fehlt noch)
+
+* pic-µCs
+	* kenn ich mich nicht mit aus (jaseg)
+* Widerstände
+	* Von digikey, zu entscheiden ist, wovon wir wieviel wollen.
+	* 1% Metall
+	* 0.1...10M Ohm, E12/24/48/96 je nach Preis. SMD-Foo ist billig, umso billiger, umso kleiner. Bedrahtet sind sie ca. 4* so teuer wie als 1206-SMD
+		* Extra von üblichen Werten: 1k, 10k, 100, 470, 330, 220, 4k7, 10k, 100k, 47k
+		* In SMD-Reihe je 25 E96, je 100 E12?
+	* SMD 1206	25=0.34USD 50=0.51USD 100=0.88USD
+	* SMD 0805	25=0.22USD 50=0.33USD 100=0.56USD
+	* SMD 0603	25=0.13USD 50=0.19USD 100=0.33USD 250=0.79USD
+	* Bedrahtet 25=1.06USD 50=1.58USD 100=2.71USD
+	* Bedrahtet 10=0.49EUR			  100=2.50EUR (Reichelt)
+* Kondensatoren
+	* Von digikey
+	* Kerkos
+		* Etwas teurer als Widerstände
+	* Folienkondensatoren ?
+		* eher nicht, können bei Bedarf gekauft oder aus Netzteilen ausgebaut werden
+
+# Already ordered
+# Kabel, Tape, Schrumpfschlauch etc.
+1	ISOBAND BL					Isotape				blau
+1	ISOBAND GE					Isotape				gelb
+1	ISOBAND RT					Isotape				rot
+1	ISOBAND WS					Isotape				weiß
+1	ISOBAND SW					Isotape				schwarz
+1	ISOBAND GN					Isotape				grün
+1	KAB-SOCKEL 3,6H				Kabelbindersockel (100Stk)
+3	KAB 100-2,5					Kabelbinder					100*2.5mm
+3	KAB 200-3,6					Kabelbinder					200*3.6mm
+4	KAZU 0440					Kabel-Zugentlastungsbügel
+5	H25PR160					Lochrasterkarte				100*160
+2	V 5583E						Strangkühlkörper
+40	GLIMMER TO 220				Glimmerplättchen			TO-220
+1	SDB 1,6 TR					Schurmpfschlauchbox transparent
+1	SDB 2,4 TR					Schurmpfschlauchbox transparent
+1	SDB 3,2 TR					Schurmpfschlauchbox transparent
+1	SDB 4,8 TR					Schurmpfschlauchbox transparent
+1	SDB 6,4 TR					Schurmpfschlauchbox transparent
+1	SDB 9,5 TR					Schurmpfschlauchbox transparent
+1	H07VU 1,5-25 SW				Schaltdraht		1.5 schwarz 25m
+#FIXME andere farben/querschnitte/längen?
+1	H05VK 1,0-50RT				Schaltlitze		1.0 rot		50m
+1	H05VK 1,0-50SW				Schaltlitze		1.0 schwarz 50m
+1	RG 58C/U-10					Koax RG58					10m
+1	RG 174-25					Koax RG174					25m
+1	LA 205-10					Zwillingslitze	0.5			10m
+1	AWG 28-10G 30M				Flachbandkabel	10pol		30m
+1	AWG 28-40G 3M				Flachbandkabel	40pol		3m
+#FIXME twice?
+1	AWG 28-20G 3M				Flachbandkabel	20pol		3m
+1	AWG 28-34G 3M				Flachbandkabel	34pol		3m
+#1	LITZE BL					Kupferlitze			blau		<= teurer
+1	LITZE BR					Kupferlitze			braun
+1	LITZE GE					Kupferlitze			gelb
+1	LITZE GN					Kupferlitze			grün
+1	LITZE GR					Kupferlitze			grau
+1	LITZE RT					Kupferlitze			rot
+1	LITZE SW					Kupferlitze			schwarz
+#1	LITZE WS					Kupferlitze			weiß		<= teurer
+1	KUPFER 0,8MM				Kupferlackdraht				0.8mm
+1	KUPFER 0,4MM				Kupferlackdraht				0.4mm
+# Laborkabel
+4	MK 612S						Krokokabel
+2	KLEPS 30 SW					Klemmprüfspitze
+2	KLEPS 30 RT					Klemmprüfspitze
+4	GE 860						BNC-Bananenstecker
+4	UG 274U						BNC-T-Stück
+2	UG 914U						BNC female-female
+2	UG 491U						BNC male-male
+4	UG 88U-C58					BNC-Stecker RG58
+4	UG 88U-C174					BNC-Stecker RG174
