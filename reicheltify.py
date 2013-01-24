@@ -74,9 +74,9 @@ def post_items(items, session):
 	
 	print(*[ 'Item unavailable: ' + el.parent.parent.parent.find_all('a')[1].text for el in pool.find_all('p', {'style': 'color: red; font-size: 10px;'}) ], sep='\n')
 
-#post_items(items[0:50], session)
-for count, itemid in items[0:50]:
-    print(count,'\t',itemid)
+post_items(items[0:50], session)
+#for count, itemid in items[0:50]:
+#    print(count,'\t',itemid)
 
 #NOTE Use the following lines instead of the line above in case reichelt.de barfs with a 500 error or empty response.
 #def chunks(seq, size):
