@@ -18,7 +18,7 @@ except ImportError:
 
 parser = argparse.ArgumentParser(description='Throw text files at reichelt!')
 parser.add_argument('csvfile', nargs='?', default=sys.stdin, type=argparse.FileType('r'))
-# parser.add_argument('-s', '--session', type=str, default=None, help='The session id of the reichelt session') FIXME not implemented (yet)
+parser.add_argument('-s', '--session', type=str, default=None, help='The session id of the reichelt session')
 args = parser.parse_args()
 
 #Decipher input
@@ -40,6 +40,8 @@ print('Read ', len(items), ' items totalling ', total_items, 'parts')
 
 session = args.session
 if not session:
+	print('No session ID given.')
+	exit(1)
 	#Get a session ID
 	#FIXME this does not work properly atm
 	srq = request.Request('http://www.reichelt.de/')
@@ -74,9 +76,9 @@ def post_items(items, session):
 	
 	print(*[ 'Item unavailable: ' + el.parent.parent.parent.find_all('a')[1].text for el in pool.find_all('p', {'style': 'color: red; font-size: 10px;'}) ], sep='\n')
 
-post_items(items[0:50], session)
+post_items(items[0:150], session)
 #for count, itemid in items[0:50]:
-#    print(count,'\t',itemid)
+#	 print(count,'\t',itemid)
 
 #NOTE Use the following lines instead of the line above in case reichelt.de barfs with a 500 error or empty response.
 #def chunks(seq, size):
