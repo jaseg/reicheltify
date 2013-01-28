@@ -76,7 +76,7 @@ def post_items(items, session):
 	
 	print(*[ 'Item unavailable: ' + el.parent.parent.parent.find_all('a')[1].text for el in pool.find_all('p', {'style': 'color: red; font-size: 10px;'}) ], sep='\n')
 
-post_items(items[0:150], session)
+post_items(items[0:200], session)
 #for count, itemid in items[0:50]:
 #	 print(count,'\t',itemid)
 

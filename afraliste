@@ -80,6 +80,55 @@
 4	µA 7905						Festspannungsregler -5V 1A	TO-220
 4	µA 7912						Festspannungsregler -12V 1A TO-220
 12	LM 317-220					Einstellbarer Spannungsregler
+# dioden (gleichrichter/schottky/zener/brückengleichrichter)
+50	1N 4148						Universaldiode
+50	1N 4148 SMD					Universaldiode SMD
+50	1N 4007						Gleichrichterdiode
+20	1N 4007 SMD					Gleichrichterdiode SMD
+20	UF 4007						Ultraschnelle Gleichrichterdiode
+20	BAT 46						Schottky
+20	BAT 46 SMD					Schottky SMD
+20	BAT 54 SMD					Schottky SMD
+20	SB 160						Schottky
+50	BAV 99 SMD					ESD-Schutz SMD
+2	B380C800RUND				Brückengleichrichter 380V/800mA
+2	KBU8M						Brückengleichrichter 1000V/8A
+2	SMD DF 04					SMD-Brückengleichrichter 125V/1A
+2	B500C1000DIP				Brückengleichrichter 500V/800mA DIP
+2	BB 833 SMD					Kapazitätsdiode
+# FIXME zenerdioden
+# Transistoren (bipolar/mosfet/jfet/igbt)
+50	BF 420
+50	BC 548C
+50	BC 558C
+20	BC 327-40
+20	BC 337-40
+20	BC 639
+20	BC 640
+10	BD 137
+10	BD 138
+10	2N 5461						(JFET)
+10	2N 7000						(MOSFET TO-92)
+10	BDX 33C						(hoher Strom)
+10	BDX 34C						(hoher Strom)
+20	BC 859C SMD					PNP SMD HF .1A
+20	BC 849C SMD					NPN SMD HF .1A
+20	BC 808-40 SMD				PNP SMD 1A
+20	BC 818-40 SMD				NPN SMD 1A
+2	IRG 4BC 40S					IGBT 600V/60A
+2	IRLZ 34N					N-MOSFET 55V/30A
+#2	IRLR 2905					N-MOSFET D-Pak 55V/36A          <==D-Pak?
+2	IRLML 2502					N-MOSFET SOT-23 20V/4.2A
+2	IRLML 6401					P-MOSFET SOT-23 -12V/-4.3A
+#2	IRFR 5305					P-MOSFET D-Pak -55V/-31A        <==D-Pak?
+4	IRF 820						N-MOSFET TO-220 500V/2.5A
+4	IRF 7389					Complementary MOSFETs SO-8 30V/2.5A
+# Thyristoren/Triacs
+4	BT 151/800R					Thyristor 800V/12A TO-220
+4	C 106D						Thyristor 400V/4A TO-225AA
+4	TIC 225M					Triac 600V/8A
+4	BT 139/800E					Triac 800V/16A
+4	BTA 12/600SW				Triac 600V/12A snubberless
 # Quarze etc.
 5	2,0000-HC18					Quarz 2MHz					HC18
 5	4,0000-HC18					Quarz 4MHz					HC18
@@ -99,40 +148,6 @@
 2	OSZI 1,000000				Quarzoszillator 1MHz
 2	OSZI 8,000000				Quarzoszillator 8MHz
 2	OSZI 16,000000				Quarzoszillator 16MHz
-# Sicherungen
-10	FLINK 0,16A					Sicherungen					5*20
-10	FLINK 0,25A					Sicherungen					5*20
-10	FLINK 0,5A					Sicherungen					5*20
-10	FLINK 0,63A					Sicherungen					5*20
-10	FLINK 0,8A					Sicherungen					5*20
-10	FLINK 1,0A					Sicherungen					5*20
-10	FLINK 1,6A					Sicherungen					5*20
-10	FLINK 2,5A					Sicherungen					5*20
-10	FLINK 4,0A					Sicherungen					5*20
-10	FLINK 6,3A					Sicherungen					5*20
-10	FLINK 10A					Sicherungen					5*20
-10	MTR. 0,16A					Sicherungen					5*20
-10	MTR. 0,25A					Sicherungen					5*20
-10	MTR. 0,5A					Sicherungen					5*20
-10	MTR. 0,63A					Sicherungen					5*20
-10	MTR. 0,8A					Sicherungen					5*20
-10	MTR. 1,0A					Sicherungen					5*20
-10	MTR. 1,6A					Sicherungen					5*20
-10	MTR. 2,5A					Sicherungen					5*20
-10	MTR. 4,0A					Sicherungen					5*20
-10	MTR. 6,3A					Sicherungen					5*20
-10	MTR. 10A					Sicherungen					5*20
-10	TRÄGE 0,16A					Sicherungen					5*20
-10	TRÄGE 0,25A					Sicherungen					5*20
-10	TRÄGE 0,5A					Sicherungen					5*20
-10	TRÄGE 0,63A					Sicherungen					5*20
-10	TRÄGE 0,8A					Sicherungen					5*20
-10	TRÄGE 1,0A					Sicherungen					5*20
-10	TRÄGE 1,6A					Sicherungen					5*20
-10	TRÄGE 2,5A					Sicherungen					5*20
-10	TRÄGE 4,0A					Sicherungen					5*20
-10	TRÄGE 6,3A					Sicherungen					5*20
-10	TRÄGE 10A					Sicherungen					5*20
 # Elkos
 10	RAD FC 10/50				Elko Low-ESR
 10	RAD FC 22/25				Elko Low-ESR
@@ -178,7 +193,22 @@
 2	TZ03 60P					Trimmkondensator
 2	TZ03 20P					Trimmkondensator
 2	TZ03 5,0P					Trimmkondensator
+# op-amps
+4	MCP 602-I/P					Opamp
+4	MCP 602-I/SN				Opamp
+4	LM 324 DIL					Opamp
+4	LM 324 D SMD				Opamp
+4	TLC 272 DIP					Opamp
+4	TLC 272 CD SMD				Opamp
+4	LM 339 DIL					Opamp
+4	LM 339 D SMD				Opamp
+4	NE 592 DIP					Opamp
+2	NE 592 D14 SMD				Opamp
 # Sockel, Stiftleisten, Stecker
+6	SL 1X40G 2,54				Stiftleiste gerade
+6	SL 2X40G 2,54				Stiftleiste gerade
+4	SL 1X40W 2,54				Stiftleiste gewinkelt
+4	SL 2X40W 2,54				Stiftleiste gewinkelt
 4	PL OGN-25					Print-Sicherungshalter
 10	GS 8						IC-Sockel
 10	GS 14						IC-Sockel
@@ -191,10 +221,6 @@
 10	GS 28-S						IC-Sockel
 2	GS 32P						IC-Sockel
 4	GS 40						IC-Sockel
-6	SL 1X40G 2,54				Stiftleiste gerade
-6	SL 2X40G 2,54				Stiftleiste gerade
-4	SL 1X40W 2,54				Stiftleiste gewinkelt
-4	SL 2X40W 2,54				Stiftleiste gewinkelt
 10	WSL 6G						Wannenstecker
 10	WSL 10G						Wannenstecker
 10	WSL 14G						Wannenstecker
@@ -314,6 +340,40 @@
 5	64Y-100k					Trimmer
 2	64Y-500k					Trimmer
 2	64Y-1,0M					Trimmer
+# Sicherungen
+10	FLINK 0,16A					Sicherungen					5*20
+10	FLINK 0,25A					Sicherungen					5*20
+10	FLINK 0,5A					Sicherungen					5*20
+10	FLINK 0,63A					Sicherungen					5*20
+10	FLINK 0,8A					Sicherungen					5*20
+10	FLINK 1,0A					Sicherungen					5*20
+10	FLINK 1,6A					Sicherungen					5*20
+10	FLINK 2,5A					Sicherungen					5*20
+10	FLINK 4,0A					Sicherungen					5*20
+10	FLINK 6,3A					Sicherungen					5*20
+10	FLINK 10A					Sicherungen					5*20
+10	MTR. 0,16A					Sicherungen					5*20
+10	MTR. 0,25A					Sicherungen					5*20
+10	MTR. 0,5A					Sicherungen					5*20
+10	MTR. 0,63A					Sicherungen					5*20
+10	MTR. 0,8A					Sicherungen					5*20
+10	MTR. 1,0A					Sicherungen					5*20
+10	MTR. 1,6A					Sicherungen					5*20
+10	MTR. 2,5A					Sicherungen					5*20
+10	MTR. 4,0A					Sicherungen					5*20
+10	MTR. 6,3A					Sicherungen					5*20
+10	MTR. 10A					Sicherungen					5*20
+10	TRÄGE 0,16A					Sicherungen					5*20
+10	TRÄGE 0,25A					Sicherungen					5*20
+10	TRÄGE 0,5A					Sicherungen					5*20
+10	TRÄGE 0,63A					Sicherungen					5*20
+10	TRÄGE 0,8A					Sicherungen					5*20
+10	TRÄGE 1,0A					Sicherungen					5*20
+10	TRÄGE 1,6A					Sicherungen					5*20
+10	TRÄGE 2,5A					Sicherungen					5*20
+10	TRÄGE 4,0A					Sicherungen					5*20
+10	TRÄGE 6,3A					Sicherungen					5*20
+10	TRÄGE 10A					Sicherungen					5*20
 # Sensoren
 2	KTY 81-110					Temperatursensor
 2	MCE 100						Elektret-Mikrofon
@@ -449,55 +509,6 @@
 4	SMCC 3,30µ
 4	SMCC 4,70µ
 4	SMCC 6,80µ
-# dioden (gleichrichter/schottky/zener/brückengleichrichter)
-50	1N 4148						Universaldiode
-50	1N 4148 SMD					Universaldiode SMD
-50	1N 4007						Gleichrichterdiode
-20	1N 4007 SMD					Gleichrichterdiode SMD
-20	UF 4007						Ultraschnelle Gleichrichterdiode
-20	BAT 46						Schottky
-20	BAT 46 SMD					Schottky SMD
-20	BAT 54 SMD					Schottky SMD
-20	SB 160						Schottky
-50	BAV 99 SMD					ESD-Schutz SMD
-2	B380C800RUND				Brückengleichrichter 380V/800mA
-2	KBU8M						Brückengleichrichter 1000V/8A
-2	SMD DF 04					SMD-Brückengleichrichter 125V/1A
-2	B500C1000DIP				Brückengleichrichter 500V/800mA DIP
-2	BB 833 SMD					Kapazitätsdiode
-# FIXME zenerdioden
-# Transistoren (bipolar/mosfet/jfet/igbt)
-50	BF 420
-50	BC 548C
-50	BC 558C
-20	BC 327-40
-20	BC 337-40
-20	BC 639
-20	BC 640
-10	BD 137
-10	BD 138
-10	2N 5461						(JFET)
-10	2N 7000						(MOSFET TO-92)
-10	BDX 33C						(hoher Strom)
-10	BDX 34C						(hoher Strom)
-20	BC 859C SMD					PNP SMD HF .1A
-20	BC 849C SMD					NPN SMD HF .1A
-20	BC 808-40 SMD				PNP SMD 1A
-20	BC 818-40 SMD				NPN SMD 1A
-2	IRG 4BC 40S					IGBT 600V/60A
-2	IRLZ 34N					N-MOSFET 55V/30A
-2	IRLR 2905					N-MOSFET D-Pak 55V/36A
-2	IRLML 2502					N-MOSFET SOT-23 20V/4.2A
-2	IRLML 6401					P-MOSFET SOT-23 -12V/-4.3A
-2	IRFR 5305					P-MOSFET D-Pak -55V/-31A
-4	IRF 820						N-MOSFET TO-220 500V/2.5A
-4	IRF 7389					Complementary MOSFETs SO-8 30V/2.5A
-# Thyristoren/Triacs
-4	BT 151/800R					Thyristor 800V/12A TO-220
-4	C 106D						Thyristor 400V/4A TO-225AA
-4	TIC 225M					Triac 600V/8A
-4	BT 139/800E					Triac 800V/16A
-4	BTA 12/600SW				Triac 600V/12A snubberless
 # ULN****
 4	ULN 2803A					Darlington array
 # any high side drivers?
@@ -513,17 +524,6 @@
 3	TL 431 TO92
 3	LM 336-Z2,5
 3	LM 336-Z5,0
-# op-amps
-4	MCP 602-I/P					Opamp
-4	MCP 602-I/SN				Opamp
-4	LM 324 DIL					Opamp
-4	LM 324 D SMD				Opamp
-4	TLC 272 DIP					Opamp
-4	TLC 272 CD SMD				Opamp
-4	LM 339 DIL					Opamp
-4	LM 339 D SMD				Opamp
-4	NE 592 DIP					Opamp
-2	NE 592 D14 SMD				Opamp
 # sonstiger analogstuff
 10	NE 555 DIP
 5	NE 555 D SMD
@@ -550,6 +550,11 @@
 								XLR (jaseg)
 								Lautsprecher und Piezofoo (jaseg)
 # digikey
+100	P931FCT-ND					931 test foo
+100	311-931FRCT-ND				931 test bar
+10	RMCF1206FT931RCT-ND			hail eris!
+100	ofhaiwufhiawufh				baz
+# end
 								mma8451qt @1.66usd (digikey) accelerometer 3ch, selectable range 2/4/8g, 14bit, a lot of integrated signal processing
 3								PS100-2B1AR10K (digikey) @3.75USD: 4*10k 100mm Schiebepoti
 								div. MSP430-µCs (msp430g2553 von lynxis, digikey)
@@ -647,7 +652,6 @@
 1	LA 205-10					Zwillingslitze	0.5			10m
 1	AWG 28-10G 30M				Flachbandkabel	10pol		30m
 1	AWG 28-40G 3M				Flachbandkabel	40pol		3m
-#FIXME twice?
 1	AWG 28-20G 3M				Flachbandkabel	20pol		3m
 1	AWG 28-34G 3M				Flachbandkabel	34pol		3m
 #1	LITZE BL					Kupferlitze			blau		<= teurer
