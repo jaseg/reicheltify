@@ -1,7 +1,7 @@
 # Reichelt:
 40	IB 2						Isolierscheiben				TO-220
 1	SDB 12,7 TR					Schurmpfschlauchbox transparent
-4	V FI343						Clip-Kühlkörper				TO-220
+8	V FI343						Clip-Kühlkörper				TO-220
 4	UG 1094U					BNC-Einbaubuchse
 2	UG 1094W2					BNC-Printbuchse
 2	MLN 100-2 SW				Messleitung			schwarz 1m
@@ -21,8 +21,6 @@
 6	SA 56-11 GN					7-Segment			grün	14.2mm
 6	SA 56-11 GE					7-Segment			gelb	14.2mm
 4	SA 56-11 BL					7-Segment			blau	14.2mm
-#FIXME these are pretty expensive
-4	SA 23-12 RT					7-Segment			rot		56.9mm
 4	RBG 1000					10-Bargraph			rot				futurlec?
 4	GBG 1000					10-Bargraph			grün			futurlec?
 20	LED 5MM ST RT				LED					rot		5mm
@@ -194,7 +192,6 @@
 2	TZ03 20P					Trimmkondensator
 2	TZ03 5,0P					Trimmkondensator
 # op-amps
-4	MCP 602-I/P					Opamp
 4	MCP 602-I/SN				Opamp
 4	LM 324 DIL					Opamp
 4	LM 324 D SMD				Opamp
@@ -538,6 +535,10 @@
 2	LM 1117 T5,0									TO-220
 2	LM 1117 T3,3									TO-220
 2	LM 1117 MP5,0									SOT-223
+# op-amps
+4	MCP 602-I/P					Opamp
+#FIXME these are pretty expensive
+4	SA 23-12 RT					7-Segment			rot		56.9mm
 
 # Nicht von Reichelt
 # jaseg
@@ -550,11 +551,9 @@
 								XLR (jaseg)
 								Lautsprecher und Piezofoo (jaseg)
 # digikey
-100	P931FCT-ND					931 test foo
-100	311-931FRCT-ND				931 test bar
-10	RMCF1206FT931RCT-ND			hail eris!
-100	ofhaiwufhiawufh				baz
 # end
+1	RS4X-ND						1/4W (.25W) 1% Metal Film 480 pcs - 5 ea of 10.0k ~ 97.6k
+1	RS5X-ND						1/4W (.25W) 1% Metal Film 480 pcs - 5 ea of 100k ~ 976k
 								mma8451qt @1.66usd (digikey) accelerometer 3ch, selectable range 2/4/8g, 14bit, a lot of integrated signal processing
 3								PS100-2B1AR10K (digikey) @3.75USD: 4*10k 100mm Schiebepoti
 								div. MSP430-µCs (msp430g2553 von lynxis, digikey)
@@ -602,6 +601,9 @@
 
 # NOTES (was fehlt noch)
 
+* Heißklebepistole
+* Elektronikseitenschneider
+* Schutzbrillen
 * pic-µCs
 	* kenn ich mich nicht mit aus (jaseg)
 * Widerstände
