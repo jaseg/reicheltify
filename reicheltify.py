@@ -11,10 +11,7 @@ import string
 import sys
 import time
 from os import path
-try:
-	import re2 as re
-except ImportError:
-	import re
+import re
 
 parser = argparse.ArgumentParser(description='Throw text files at reichelt!')
 parser.add_argument('csvfile', nargs='?', default=sys.stdin, type=argparse.FileType('r'))
@@ -23,10 +20,8 @@ args = parser.parse_args()
 
 #Decipher input
 items = []
-linenum = 0
 total_items = 0
 for l in args.csvfile:
-	linenum += 1
 	if 'Nicht von Reichelt' in l:
 		break
 	if not l.startswith('#'):
@@ -73,12 +68,14 @@ def post_items(items, session):
 			else:
 				o = r.find('input', {'class': 'artnr'})
 				print('Part number corrected, please repost:', o['value'])
-	
 	print(*[ 'Item unavailable: ' + el.parent.parent.parent.find_all('a')[1].text for el in pool.find_all('p', {'style': 'color: red; font-size: 10px;'}) ], sep='\n')
 
-post_items(items[0:200], session)
-#for count, itemid in items[0:50]:
-#	 print(count,'\t',itemid)
+pd = items
+post_items(pd, session)
+total = 0
+for count, itemid in pd:
+	total += int(count)
+print('Posted', total, 'items.')
 
 #NOTE Use the following lines instead of the line above in case reichelt.de barfs with a 500 error or empty response.
 #def chunks(seq, size):

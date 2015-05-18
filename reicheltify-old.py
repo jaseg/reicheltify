@@ -41,6 +41,7 @@ for l in args.csvfile:
 			(count, itemid) = d[:2]
 			items.append((count, itemid.strip()))
 			total_items += int(count)
+items=items[:29]
 
 print('Read ', len(items), ' items totalling ', total_items, 'parts')
 
